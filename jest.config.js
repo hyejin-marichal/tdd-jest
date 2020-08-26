@@ -1,7 +1,9 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-
+const {defaults} = require('jest-config');
 module.exports = {
+  verbose: true,
+  moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
